@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_player"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    tools:context="com.trial.smp.trial.Player"
+    android:background="@drawable/background">
+
+
+    <Button
+        android:gravity="center"
+            android:id="@+id/player"
+            android:text="@string/play"
+            android:layout_marginRight="25dp"
+            android:textColor="#FFFFFF"
+            android:textSize="36dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="4"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/prever"
+        android:text="@string/pre"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonbb"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="4"
+        android:shadowDy="-0"
+        android:shadowRadius="10"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/nexter"
+        android:text="@string/nex"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonff"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="4"
+        android:shadowDy="-0"
+        android:shadowRadius="10"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/Album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@android:color/background_light"
+        android:layout_above="@+id/seekBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="32dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/artist_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@android:color/background_light"
+        android:layout_above="@+id/Album"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/songname"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@android:color/background_light"
+        android:layout_marginTop="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <ImageView
+        android:id="@+id/album_art"
+        android:padding="3dp"
+        android:background="#112dff"
+        android:layout_above="@+id/artist_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:layout_height="220dp"
+        android:layout_width="225dp"
+
+        android:paddingRight="3dp"
+        android:paddingLeft="3dp"
+         />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/seekBar"
+        android:alpha="1"
+        android:layout_above="@+id/player"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:fadingEdge="horizontal" />
+
+
+</RelativeLayout>
